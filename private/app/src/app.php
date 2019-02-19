@@ -6,12 +6,12 @@
 /**
  * 1. Intégration de la configuration
  */
-require_once "../private/app/config/config.php";
+// require_once "../private/app/config/config.php";
 
 /**
  * 2. Définition de l'environnement
  */
-require_once "../private/app/src/environnement.php";
+// require_once "../private/app/src/environnement.php";
 
 /**
  * 3. Comportement des erreurs
