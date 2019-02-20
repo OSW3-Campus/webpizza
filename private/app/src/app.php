@@ -33,10 +33,6 @@ require_once "../private/app/src/routing.php";
  */
 require_once "../private/app/src/load_utils.php";
 
-
-echo randstr(32, false, true)."<br>";
-echo randstr(1, true, true)."<br>";
-echo randstr(32, true, true)."<br>";
 /**
  * 7. Compilation de la page
  */
