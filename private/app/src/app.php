@@ -6,12 +6,12 @@
 /**
  * 1. Intégration de la configuration
  */
-// require_once "../private/app/config/config.php";
+require_once "../private/app/config/config.php";
 
 /**
  * 2. Définition de l'environnement
  */
-// require_once "../private/app/src/environnement.php";
+require_once "../private/app/src/environnement.php";
 
 /**
  * 3. Comportement des erreurs
@@ -29,6 +29,11 @@ require_once "../private/app/src/db_connect.php";
 require_once "../private/app/src/routing.php";
 
 /**
- * 6. Compilation de la page
+ * 6. Inclusion des fonctions "Utils"
+ */
+require_once "../private/app/src/load_utils.php";
+
+/**
+ * 7. Compilation de la page
  */
 require_once "../private/app/src/compile.php";
