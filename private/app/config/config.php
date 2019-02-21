@@ -31,5 +31,19 @@ $env = "prod";
 $dev_domains = [
     "127.0.0.1",
     "localhost",
-    // "webpizza.local"
+    "webpizza.local"
 ];
+
+/**
+ * 3. Définition des variables de base de données
+ */
+
+// Liste des configurations de connections aux bases de données par défaut
+$db_config = [];
+
+// Liste des connections aux bases de données
+// Cette liste sera nourris par le fichier db_connect.php
+$db = [];
+
+// Inclusion de la config de la base de données
+require_once "database.php";
