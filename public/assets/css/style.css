@@ -196,7 +196,7 @@ section {
     padding-top: 6rem;
     padding-bottom: 4rem;
     margin-bottom: 0;
-    background-image: url(http://localhost:8080/assets/images/banner.jpg);
+    background-image: url(../images/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
