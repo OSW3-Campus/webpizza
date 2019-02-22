@@ -24,7 +24,7 @@
     <script src="assets/js/bootstrap.min.js" ></script>
 
     <!-- App JS -->
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js?<?= time() ?>"></script>
 
 </body>
 
