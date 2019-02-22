@@ -35,28 +35,28 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link " href="/pizzas">Pizzas</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="/pizzas">Pizzas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="/salades">Salades</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "salads" ? "active" : null) ?>" href="/salades">Salades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="/desserts">Desserts</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "desserts" ? "active" : null) ?>" href="/desserts">Desserts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="/boissons">Boissons</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "drinks" ? "active" : null) ?>" href="/boissons">Boissons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="/menus">Menus</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "menus" ? "active" : null) ?>" href="/menus">Menus</a>
                         </li>
                     </ul>
 
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/mon-compte">Mon Compte</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "account" ? "active" : null) ?>" href="/mon-compte">Mon Compte</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link cart" href="/panier">Panier</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "order" ? "active" : null) ?> cart" href="/panier">Panier</a>
                         </li>
                     </ul>
                 </div>
@@ -69,3 +69,4 @@
 
     <!-- Main Content -->
     <div id="main-content">
+        
