@@ -31,7 +31,7 @@ $routes = [
     ["forgotten_password", "/mot-de-passe-oublie", "security:forgotten_password", ["HEAD","GET","POST"]],
 
     // Page de commande
-    ["order", "/order", "order:index", ["HEAD","GET"]],
+    ["order", "/panier", "order:index", ["HEAD","GET"]],
 
     // Profil utilisateur
     ["account", "/mon-compte", "account", ["HEAD","GET"]],
