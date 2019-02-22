@@ -49,7 +49,7 @@
         <!-- Footer Copyright -->
         <div class="footer-legal">
             <div class="container">
-                Copyright &copy; 2018 - 2019 Web Pizza.
+                Copyright &copy; 2018 - xxxx Web Pizza.
             </div>
         </div>
 

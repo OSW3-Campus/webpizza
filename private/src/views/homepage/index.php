@@ -1,6 +1,4 @@
-<?php
-include_once "../private/src/views/layout/header.php";
-?>
+<?php include_once "../private/src/views/layout/header.php"; ?>
 
         <!-- Pizzas Showcase -->
         <section>
@@ -88,6 +86,4 @@ include_once "../private/src/views/layout/header.php";
         </section>
 
 
-<?php
-include_once "../private/src/views/layout/footer.php";
-?>
+<?php include_once "../private/src/views/layout/footer.php"; ?>
