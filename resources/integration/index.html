@@ -82,10 +82,10 @@
                 </ol>
 
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-illustration="slide1.jpg" style="background-image: url('assets/images/slide1.jpg');"></div>
-                    <div class="carousel-item" data-illustration="slide2.jpg" style="background-image: url('assets/images/slide2.jpg');"></div>
-                    <div class="carousel-item" data-illustration="slide3.jpg" style="background-image: url('assets/images/slide3.jpg');"></div>
-                    <div class="carousel-item" data-illustration="slide4.png" style="background-image: url('assets/images/slide4.png');"></div>
+                    <div class="carousel-item active" data-illustration="slide1.jpg"></div>
+                    <div class="carousel-item" data-illustration="slide2.jpg"></div>
+                    <div class="carousel-item" data-illustration="slide3.jpg"></div>
+                    <div class="carousel-item" data-illustration="slide4.png"></div>
                 </div>
 
                 <a class="carousel-control-prev" href="#showcase" role="button" data-slide="prev">
@@ -99,6 +99,8 @@
 
             </div>
         </section>
+
+
         <!-- Offres Menus -->
         <section id="offers">
             <div class="container">
@@ -106,7 +108,7 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
 
-                        <div id="wpo1" class="offer-tile offer-tile-large" data-illustration="tile-1.jpg" style="background-image: url('assets/images/tile-1.jpg');">
+                        <div id="wpo1" class="offer-tile offer-tile-large" data-illustration="tile-1.jpg" >
                             <a href="/pizzas"></a>
                         </div>
 
@@ -115,7 +117,7 @@
                         <div class="row">
                             <div class="col-6">
 
-                                <div id="wpo2" class="offer-tile offer-tile-small" data-illustration="tile-2.jpg" style="background-image: url('assets/images/tile-2.jpg');">
+                                <div id="wpo2" class="offer-tile offer-tile-small" data-illustration="tile-2.jpg" >
                                     <a href="/salades">
                                         <div class="caption">
                                             <h3 class="title">Salades</h3>
@@ -126,7 +128,7 @@
                             </div>
                             <div class="col-6">
 
-                                <div id="wpo3" class="offer-tile offer-tile-small" data-illustration="tile-3.jpg" style="background-image: url('assets/images/tile-3.jpg');">
+                                <div id="wpo3" class="offer-tile offer-tile-small" data-illustration="tile-3.jpg" >
                                     <a href="/desserts">
                                         <div class="caption">
                                             <h3 class="title">Desserts</h3>
@@ -137,8 +139,7 @@
                             </div>
                             <div class="col-12">
 
-                                <div id="wpo4" class="offer-tile offer-tile-medium" data-illustration="tile-4.jpg"
-                                    style="background-image: url('assets/images/tile-4.jpg');">
+                                <div id="wpo4" class="offer-tile offer-tile-medium" data-illustration="tile-4.jpg">
                                     <a href="/boissons">
                                         <div class="caption">
                                             <h3 class="title">Cappucino<br>&amp; espresso</h3>
@@ -150,71 +151,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-                <!-- <div class="section-header">
-            <h3 class="section-title">Nos menus</h3>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quam architecto cum? Similique eum, perspiciatis est quo sit reiciendis natus ex quidem sint iure, vitae aspernatur dolorum? Corrupti, aliquam quasi?</p>
-        </div>
-
-        <div class="row">
-
-            <!-- Offre 1 --
-            <div class="col-12 col-md-4">
-            
-                <div class="offer-container offer-1">
-                    <h3 class="offer-header">1 PIZZA + 1.5 DRINK<br>+ GARLIC BREAD</h3>
-                    <div class="offer-content">
-                        <img class="img-fluid" src="assets/images/combo1.png" alt="">
-                    </div>
-                    <div class="offer-footer">
-                        <button class="btn btn-block btn-default">Commander</button>
-                    </div>
-                </div>
-            
-            </div>
-            <!-- Fin Offre 1 --
-
-            <!-- Offre 2 --
-            <div class="col-12 col-md-4">
-            
-                <div class="offer-container offer-2">
-                    <h3 class="offer-header">2 PIZZA + 1.5 DRINK<br>+ GARLIC BREAD</h3>
-                    <div class="offer-content">
-                        <img class="img-fluid" src="assets/images/combo2.png" alt="">
-                    </div>
-                    <div class="offer-footer">
-                        <button class="btn btn-block btn-default">Commander</button>
-                    </div>
-                </div>
-            
-            </div>
-            <!-- Fin Offre 2 --
-
-            <!-- Offre 2 --
-            <div class="col-12 col-md-4">
-            
-                <div class="offer-container offer-3">
-                    <h3 class="offer-header">3 PIZZA + 1.5 DRINK<br>+ GARLIC BREAD</h3>
-                    <div class="offer-content">
-                        <img class="img-fluid" src="assets/images/combo3.png" alt="">
-                    </div>
-                    <div class="offer-footer">
-                        <button class="btn btn-block btn-default">Commander</button>
-                    </div>
-                </div>
-            
-            </div>
-            <!-- Fin Offre 2 --
-
-        </div> -->
             </div>
         </section>
 
@@ -223,40 +159,35 @@
     <!-- end #main-content -->
 
 
-
     <section id="contact">
         <div class="container">
-            <form name="contact" class="row" method="post" novalidate="">
+            <form name="contact" class="row" method="post" novalidate>
 
                 <!-- Champ Prénom -->
                 <div class="col-12 col-md-4">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Votre Prénom"
-                            required="" data-kwimpalastatus="alive" data-kwimpalaid="1550823981346-2">
-                        <span style="opacity: 1; left: 328px; top: 12.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4='); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Votre Prénom" required>
+                    </div>
                 </div>
 
                 <!-- Champ Nom -->
                 <div class="col-12 col-md-4">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Votre NOM"
-                            required="" data-kwimpalastatus="alive" data-kwimpalaid="1550823981346-3">
-                        <span style="opacity: 1; left: 328px; top: 12.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4='); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Votre NOM" required>
+                    </div>
                 </div>
 
                 <!-- Champ Email -->
                 <div class="col-12 col-md-4">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse e-mail"
-                            required="" data-kwimpalastatus="alive" data-kwimpalaid="1550823981346-4">
-                        <span style="opacity: 1; left: 328px; top: 12.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4='); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse e-mail" required>
+                    </div>
                 </div>
 
                 <!-- Champ Message -->
                 <div class="col-12">
                     <div class="form-group">
-                        <textarea name="message" class="form-control" id="message" rows="5" placeholder="Votre message"
-                            required=""></textarea>
+                        <textarea name="message" class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
                     </div>
                 </div>
 
@@ -267,18 +198,15 @@
             </form>
         </div>
     </section>
+
+
     <!-- Main Footer -->
     <footer id="main-footer">
-
-        <!-- Footer Links -->
-        <!-- <div class="footer-links">
-
-        </div> -->
 
         <!-- Footer Copyright -->
         <div class="footer-legal">
             <div class="container">
-                Copyright © 2018 - 2019 Web Pizza.
+                Copyright &copy; 2018 - 2019 Web Pizza.
             </div>
         </div>
 
