@@ -58,14 +58,19 @@ function contact_index()
             $query->bindValue(':message', $message, PDO::PARAM_STR);
             $query->bindValue(':sendingTimestamp', time(), PDO::PARAM_INT);
 
-            $query->execute();
-
+            $results = $query->execute();
 
             // TODO: Définition d'un message de "callback / flashbag" (success ou error)
-            // TODO: Redirection de l'utilisateur vers la page précedente 
+            if ($results) {
+                setFlashbag("success", "Merci $firstname, Votre message à était envoyé.");
+            }
+            else {
+                setFlashbag("danger", "Votre message n'à pas était envoyé.");
+            }
 
-            // echo "On enregistre le message dans la BDD";
-        
+            // Redirection de l'utilisateur vers la page précedente 
+            header("location: ".$_SERVER['HTTP_REFERER']);
+
         }
         // else {
             // TODO: Définition d'un message de "callback" (error)

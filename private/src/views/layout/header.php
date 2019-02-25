@@ -69,4 +69,10 @@
 
     <!-- Main Content -->
     <div id="main-content">
+
+        <?php if (hasFlashbag()): $flashMsg = getFlashbag(); ?>
+        <div class="alert alert-<?= $flashMsg['state']; ?>">
+            <?= $flashMsg['message']; ?>
+        </div>
+        <?php endif; ?>
         

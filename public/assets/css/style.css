@@ -129,6 +129,10 @@ textarea {
     z-index: 5;
 }
 
+.alert {
+    margin: 0;
+}
+
 section {
     margin-bottom: 80px;
 }
