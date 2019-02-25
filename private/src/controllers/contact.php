@@ -8,7 +8,7 @@
  */
 function contact_index() 
 {
-    global $re;
+    global $re, $db;
 
     if ($_SERVER['REQUEST_METHOD'] === "POST")
     {
@@ -47,9 +47,20 @@ function contact_index()
         }
 
         if ($send) {
-            // TODO: Création de la table "message" (id, firstname, lastname, message, date_time)
-            // TODO: Ajout du fichier SQL contenant la structure de la table "message", au répertoire /private/sql/
-            // TODO: Enregistrement du messgae dans la BDD avec PDO
+            // Enregistrement du message dans la BDD avec PDO
+
+            $query = $db['main']->prepare("INSERT INTO messages (`firstname`, `lastname`, `email`, `message`, `sending_timestamp`) 
+                                                         VALUES (:firstname , :lastname , :email , :message, :sendingTimestamp )");
+
+            $query->bindValue(':firstname', $firstname, PDO::PARAM_STR);
+            $query->bindValue(':lastname', $lastname, PDO::PARAM_STR);
+            $query->bindValue(':email', $email, PDO::PARAM_STR);
+            $query->bindValue(':message', $message, PDO::PARAM_STR);
+            $query->bindValue(':sendingTimestamp', time(), PDO::PARAM_INT);
+
+            $query->execute();
+
+
             // TODO: Définition d'un message de "callback / flashbag" (success ou error)
             // TODO: Redirection de l'utilisateur vers la page précedente 
 
