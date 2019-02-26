@@ -78,6 +78,17 @@ textarea {
     transition: all 0.3s;
 }
 
+#main-header .navbar a.dropdown-item {
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: initial;
+}
+#main-header .navbar a.dropdown-item.active,
+#main-header .navbar a.dropdown-item:hover {
+    color: #000;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
 #main-header .navbar .nav-link.cart {
     background-color: #8ca93e;
     color: rgba(255, 255, 255, 0.8);
