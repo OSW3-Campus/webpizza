@@ -129,8 +129,19 @@ textarea {
     z-index: 5;
 }
 
+/* Alert / Message Flash */
 .alert {
     margin: 0;
+}
+
+/* formulaire */
+.security-form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.form-link {
+    text-align: center;
+    padding-bottom: 30px;    
 }
 
 section {

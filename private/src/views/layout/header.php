@@ -35,7 +35,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="/pizzas">Pizzas</a>
+                            <!-- <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="/pizzas">Pizzas</a> -->
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="<?= url('pizzas') ?>">Pizzas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?= ($GLOBALS['route_active'] == "salads" ? "active" : null) ?>" href="/salades">Salades</a>
@@ -52,9 +53,22 @@
                     </ul>
 
                     <ul class="navbar-nav">
+                        <?php if (isset($_SESSION['user']['id']) && !empty($_SESSION['user']['id'])): ?>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "account" ? "active" : null) ?> dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <?= $_SESSION['user']['fullname'] ?>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="/mon-compte">Mon compte</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/deconnexion">Déconnexion</a>
+                            </div>
+                        </li>
+                        <?php else: ?>
                         <li class="nav-item">
                             <a class="nav-link <?= ($GLOBALS['route_active'] == "account" ? "active" : null) ?>" href="/mon-compte">Mon Compte</a>
                         </li>
+                        <?php endif; ?>
                         <li class="nav-item">
                             <a class="nav-link <?= ($GLOBALS['route_active'] == "order" ? "active" : null) ?> cart" href="/panier">Panier</a>
                         </li>
