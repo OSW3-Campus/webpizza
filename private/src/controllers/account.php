@@ -8,8 +8,11 @@
  */
 function account_index() 
 {
-    // Code 
-    // ...
+    // Verifie si l'utilisateur n'est pas identifié
+    if (!isset($_SESSION['user']) || empty($_SESSION['user'])) 
+    {
+        redirect("/connexion");
+    }
     
     // Intégration de la vue
     include_once "../private/src/views/account/index.php";
