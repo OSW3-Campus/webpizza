@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+    <base href="/">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,8 +36,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto ml-auto">
                         <li class="nav-item">
-                            <!-- <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="/pizzas">Pizzas</a> -->
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="<?= url('pizzas') ?>">Pizzas</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="/pizzas">Pizzas</a>
+                            <!-- <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="<?= url('pizzas') ?>">Pizzas</a> -->
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?= ($GLOBALS['route_active'] == "salads" ? "active" : null) ?>" href="/salades">Salades</a>

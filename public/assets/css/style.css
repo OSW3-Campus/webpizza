@@ -146,6 +146,7 @@ textarea {
 }
 
 /* formulaire */
+.crud-form,
 .security-form {
     padding-top: 30px;
     padding-bottom: 30px;
