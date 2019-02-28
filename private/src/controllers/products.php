@@ -12,10 +12,31 @@ function products_pizzas()
     include_once "../private/src/models/products.php";
     
     $pageTitle = "Nos Pizzas";
-    $products = getPizzas();
+
+    $products = [];
+    $productsModel = getPizzas();
+
+    // Re-construction de la liste des produite
+    foreach ($productsModel as $product) 
+    {
+        if (!isset($products[ $product['productID'] ])) 
+        {
+            $products[ $product['productID'] ] = [];
+        }
+        
+        $products[ $product['productID'] ]['id'] = $product['productID'];
+        $products[ $product['productID'] ]['name'] = $product['productName'];
+        $products[ $product['productID'] ]['price'] = $product['productPrice'];
+        $products[ $product['productID'] ]['illustration'] = $product['productIllustration'];
+
+        if (!isset($products[ $product['productID'] ]['ingredients'])) {
+            $products[ $product['productID'] ]['ingredients'] = [];
+        }
+
+        array_push($products[ $product['productID'] ]['ingredients'], $product['ingredientName']);
+    }
 
     // Intégration de la vue
-    // include_once "../private/src/views/products/pizzas.php";
     include_once "../private/src/views/products/read.php";
 }
 
@@ -24,16 +45,13 @@ function products_pizzas()
  */
 function products_salads() 
 {
-    global $db;
-
-    $pageTitle = "Nos Salades";
-
-    // Récupération de la liste des produits de type "Salades"
-    $query = $db['main']->query( "SELECT t1.id, t1.name, t1.price, t3.name FROM products AS t1 INNER JOIN product_ingredients AS t2 ON t2.id_product = t1.id INNER JOIN ingredients AS t3 ON t3.id = t2.id_ingredient WHERE t1.type='salads' ORDER BY t1.name ASC, t3.name ASC" );
-    $products = $query->fetchAll();
+    // Intégration du model
+    include_once "../private/src/models/products.php";
     
+    $pageTitle = "Nos Salades";
+    $products = getSalads();
+
     // Intégration de la vue
-    // include_once "../private/src/views/products/salads.php";
     include_once "../private/src/views/products/read.php";
 }
 
@@ -42,11 +60,14 @@ function products_salads()
  */
 function products_desserts() 
 {
-    // Code 
-    // ...
+    // Intégration du model
+    include_once "../private/src/models/products.php";
     
+    $pageTitle = "Nos Desserts";
+    $products = getDesserts();
+
     // Intégration de la vue
-    include_once "../private/src/views/products/desserts.php";
+    include_once "../private/src/views/products/read.php";
 }
 
 /**
@@ -54,11 +75,14 @@ function products_desserts()
  */
 function products_drinks() 
 {
-    // Code 
-    // ...
+    // Intégration du model
+    include_once "../private/src/models/products.php";
     
+    $pageTitle = "Nos Boissons";
+    $products = getDrinks();
+
     // Intégration de la vue
-    include_once "../private/src/views/products/drinks.php";
+    include_once "../private/src/views/products/read.php";
 }
 
 /**
@@ -66,11 +90,14 @@ function products_drinks()
  */
 function products_menus() 
 {
-    // Code 
-    // ...
+    // Intégration du model
+    include_once "../private/src/models/products.php";
     
+    $pageTitle = "Nos Menus";
+    $products = getMenus();
+
     // Intégration de la vue
-    include_once "../private/src/views/products/menus.php";
+    include_once "../private/src/views/products/read.php";
 }
 
 
@@ -108,7 +135,7 @@ function products_create()
     }
 
     // Affichage du Formulaire
-    include_once "../private/src/views/products/crud/create.php";
+    include_once "../private/src/views/products/create.php";
 }
 
 /**
